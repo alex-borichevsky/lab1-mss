@@ -14,7 +14,7 @@ public class AnalyzingFrame extends JFrame {
     AnalyzingFrame(String code){
         Analyzer analyzer = new Analyzer();
 
-        this.setTitle("eliminating the effect of accidentally pressing Caps Lock");
+        this.setTitle("Caps Lock");
         this.setSize(300,200);
         this.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         this.setLocation(700,350);

@@ -15,6 +15,7 @@ public class Analyzer {
         String delimeter = " ";
         while(scanner.hasNextLine()){
             inputBuilder.append(scanner.nextLine());
+            inputBuilder.append("\n");
         }
 
         String st = inputBuilder.toString();
@@ -33,9 +34,6 @@ public class Analyzer {
         StringBuilder stringBuilder = new StringBuilder(str);
         int count = 0;
 
-//        if(Character.isUpperCase(stringBuilder.charAt(0))){
-//
-//        }
         for (int i = 0; i < str.length(); i++) {
             if (Character.isUpperCase(str.charAt(i))) {
                 count++;
