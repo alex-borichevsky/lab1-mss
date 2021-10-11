@@ -11,7 +11,9 @@ public class Analyzer {
         StringBuilder inputBuilder = new StringBuilder("");
         StringBuilder outputBuilder = new StringBuilder();
 
-        Scanner scanner = new Scanner(new File("D:\\mss\\lab1\\src\\input.txt"));
+        //Scanner scanner = new Scanner(new File("D:\\mss\\lab1\\src\\input.txt"));
+        Scanner scanner = new Scanner(MainWindow.fileTextArea.getText());
+
         String delimeter = " ";
         while(scanner.hasNextLine()){
             inputBuilder.append(scanner.nextLine());

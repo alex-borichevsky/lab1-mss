@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 
@@ -53,9 +54,12 @@ public class MainWindow extends JFrame {
                     fileNotFoundException.printStackTrace();
                 }
                 String document = "";
+
                 while(scan.hasNextLine()) {
-                    document = scan.nextLine();
+                    document += scan.nextLine();
+                    document += "\n";
                 }
+
                 fileTextArea.setText(document);
             }
         });
@@ -91,6 +95,6 @@ public class MainWindow extends JFrame {
     private JMenuItem save = new JMenuItem("Save file");
     private JMenuItem textAnalyze = new JMenuItem("Assaying");
 
-    private JTextArea fileTextArea = new JTextArea("some text");
+    public static JTextArea fileTextArea = new JTextArea("some text");
 
 }
